@@ -8,6 +8,7 @@ TagManager:
   - Projectile
   - Ground
   - powerUP
+  - enimy
   layers:
   - Default
   - TransparentFX
