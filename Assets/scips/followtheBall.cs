@@ -17,6 +17,6 @@ public class followtheBall : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
-        Instantiate(obgect, ball);
+       // Instantiate(obgect, ball);
     }
 }
