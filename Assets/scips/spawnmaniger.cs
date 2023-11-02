@@ -16,7 +16,7 @@ public class spawnmaniger : MonoBehaviour
 
         spawnEnemyWave(waveNumber);
 
-       // Instantiate(powerUp, GenrateSpaenpos(), powerUp.transform.rotation);
+        Instantiate(powerUp, GenrateSpaenpos(), powerUp.transform.rotation);
 
 
     }

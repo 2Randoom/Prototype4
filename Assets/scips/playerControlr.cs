@@ -9,8 +9,10 @@ public class playerControlr : MonoBehaviour
     public float speed;
     private GameObject focalPoint;
     public bool hasPowerUp = false;
+    public bool hasparticle = false;
     private float Powerupstranthe = 15.0f;
     public GameObject PowerupinDicator;
+    public ParticleSystem particlesystem;
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +36,8 @@ public class playerControlr : MonoBehaviour
         if (other.CompareTag("powerUP"))
         {
             hasPowerUp = true;
-            PowerupinDicator.gameObject.SetActive(true);
+            hasparticle = true;
+            PowerupinDicator.gameObject.GetComponent<MeshRenderer>().enabled = true;
             Destroy(other.gameObject);
             StartCoroutine(powerUpcountdown());
            
@@ -45,6 +48,7 @@ public class playerControlr : MonoBehaviour
       yield return new WaitForSeconds(7);
         hasPowerUp = false;
         PowerupinDicator.gameObject.SetActive(false);
+
     }
     private void OnCollisionEnter(Collision collision)
     {
