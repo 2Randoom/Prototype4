@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b6215ba064fbdc40948f41167bb39fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  speed: 15
   suziHead: {fileID: 4766542804401848895}
 --- !u!54 &4766542804676294070
 Rigidbody:

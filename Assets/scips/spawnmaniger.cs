@@ -32,7 +32,7 @@ public class spawnmaniger : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         enemyCount = FindObjectsByType<enimy>(0).Length;
 

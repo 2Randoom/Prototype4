@@ -19,10 +19,11 @@ public class playerControlr : MonoBehaviour
     {
         playerRB = GetComponent<Rigidbody>();
         focalPoint = GameObject.Find("focalpoint");
+        particlesystem.Stop();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         float forwardInput = Input.GetAxis("Vertical");
 
@@ -36,9 +37,9 @@ public class playerControlr : MonoBehaviour
         if (other.CompareTag("powerUP"))
         {
             hasPowerUp = true;
-            hasparticle = true;
             PowerupinDicator.gameObject.GetComponent<MeshRenderer>().enabled = true;
             Destroy(other.gameObject);
+            particlesystem.Play();
             StartCoroutine(powerUpcountdown());
            
         }
@@ -47,7 +48,9 @@ public class playerControlr : MonoBehaviour
     {
       yield return new WaitForSeconds(7);
         hasPowerUp = false;
-        PowerupinDicator.gameObject.SetActive(false);
+        PowerupinDicator.gameObject.GetComponent<MeshRenderer>().enabled = false;
+        // PowerupinDicator.gameObject.SetActive(false);
+        particlesystem.Stop();
 
     }
     private void OnCollisionEnter(Collision collision)

@@ -663,10 +663,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: susienemy
       objectReference: {fileID: 0}
-    - target: {fileID: 4766542804676294065, guid: c0a6a66630828a646874d30a483e8264, type: 3}
-      propertyPath: suziHead
-      value: 
-      objectReference: {fileID: 1652720349}
     - target: {fileID: 4766542804676294069, guid: c0a6a66630828a646874d30a483e8264, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -979,11 +975,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1652720349 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4766542804401848895, guid: c0a6a66630828a646874d30a483e8264, type: 3}
-  m_PrefabInstance: {fileID: 1303276536}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1791105023
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1167,6 +1158,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 641100608082967878, guid: b012d237819768343aef46066cc4b0ec, type: 3}
+      propertyPath: speed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 641100608082967878, guid: b012d237819768343aef46066cc4b0ec, type: 3}
+      propertyPath: particlesystem
+      value: 
+      objectReference: {fileID: 3469287836542310133}
+    - target: {fileID: 641100608082967878, guid: b012d237819768343aef46066cc4b0ec, type: 3}
       propertyPath: PowerupinDicator
       value: 
       objectReference: {fileID: 919132149021361132}
@@ -1225,6 +1224,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5255729276277371773, guid: e5dc0634c28044a419e61d141c3ba6eb, type: 3}
   m_PrefabInstance: {fileID: 4913832086876287121}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &3469287836542310133 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3469287836542310133, guid: e5dc0634c28044a419e61d141c3ba6eb, type: 3}
+  m_PrefabInstance: {fileID: 4913832086876287121}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4913832086876287121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1238,11 +1242,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4880715910225226183, guid: e5dc0634c28044a419e61d141c3ba6eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.56
+      value: -1.6024
       objectReference: {fileID: 0}
     - target: {fileID: 4880715910225226183, guid: e5dc0634c28044a419e61d141c3ba6eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.02
+      value: -0.020137
       objectReference: {fileID: 0}
     - target: {fileID: 4880715910225226183, guid: e5dc0634c28044a419e61d141c3ba6eb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1279,10 +1283,6 @@ PrefabInstance:
     - target: {fileID: 5255729276277371773, guid: e5dc0634c28044a419e61d141c3ba6eb, type: 3}
       propertyPath: m_Name
       value: powerup
-      objectReference: {fileID: 0}
-    - target: {fileID: 5255729276277371773, guid: e5dc0634c28044a419e61d141c3ba6eb, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5dc0634c28044a419e61d141c3ba6eb, type: 3}
